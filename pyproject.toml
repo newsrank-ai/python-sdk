@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "newsrank_sdk"
-version = "0.1.8"
+version = "0.1.9"
 description = "NewsRank API"
 authors = ["OpenAPI Generator Community <team@openapitools.org>"]
 license = "NoLicense"

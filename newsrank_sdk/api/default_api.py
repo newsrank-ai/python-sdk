@@ -507,7 +507,7 @@ class DefaultApi:
 
         return self.api_client.param_serialize(
             method='GET',
-            resource_path='/api/v1/backtest',
+            resource_path='/api/backtest',
             path_params=_path_params,
             query_params=_query_params,
             header_params=_header_params,
@@ -542,7 +542,7 @@ class DefaultApi:
     ) -> BacktestReplayWithEmbeddings200Response:
         """Replay events with embedding filters
 
-        Same as `GET /api/v1/backtest` but accepts a JSON body for advanced filters including embedding vector similarity search.  Use `embedding_filters` to find events about articles semantically similar to a reference embedding. Max 1 embedding filter per request. Requires **Pro tier or higher**. 
+        Same as `GET /api/backtest` but accepts a JSON body for advanced filters including embedding vector similarity search.  Use `embedding_filters` to find events about articles semantically similar to a reference embedding. Max 1 embedding filter per request. Requires **Pro tier or higher**. 
 
         :param backtest_replay_with_embeddings_request: (required)
         :type backtest_replay_with_embeddings_request: BacktestReplayWithEmbeddingsRequest
@@ -611,7 +611,7 @@ class DefaultApi:
     ) -> ApiResponse[BacktestReplayWithEmbeddings200Response]:
         """Replay events with embedding filters
 
-        Same as `GET /api/v1/backtest` but accepts a JSON body for advanced filters including embedding vector similarity search.  Use `embedding_filters` to find events about articles semantically similar to a reference embedding. Max 1 embedding filter per request. Requires **Pro tier or higher**. 
+        Same as `GET /api/backtest` but accepts a JSON body for advanced filters including embedding vector similarity search.  Use `embedding_filters` to find events about articles semantically similar to a reference embedding. Max 1 embedding filter per request. Requires **Pro tier or higher**. 
 
         :param backtest_replay_with_embeddings_request: (required)
         :type backtest_replay_with_embeddings_request: BacktestReplayWithEmbeddingsRequest
@@ -680,7 +680,7 @@ class DefaultApi:
     ) -> RESTResponseType:
         """Replay events with embedding filters
 
-        Same as `GET /api/v1/backtest` but accepts a JSON body for advanced filters including embedding vector similarity search.  Use `embedding_filters` to find events about articles semantically similar to a reference embedding. Max 1 embedding filter per request. Requires **Pro tier or higher**. 
+        Same as `GET /api/backtest` but accepts a JSON body for advanced filters including embedding vector similarity search.  Use `embedding_filters` to find events about articles semantically similar to a reference embedding. Max 1 embedding filter per request. Requires **Pro tier or higher**. 
 
         :param backtest_replay_with_embeddings_request: (required)
         :type backtest_replay_with_embeddings_request: BacktestReplayWithEmbeddingsRequest
@@ -786,7 +786,7 @@ class DefaultApi:
 
         return self.api_client.param_serialize(
             method='POST',
-            resource_path='/api/v1/backtest',
+            resource_path='/api/backtest',
             path_params=_path_params,
             query_params=_query_params,
             header_params=_header_params,
