@@ -97,7 +97,7 @@ conf = newsrank_sdk.Configuration(
                  ) -> None:
         """Constructor
         """
-        self._base_path = "https://api.newsrank.ai/v1" if host is None else host
+        self._base_path = "https://api.newsrank.ai" if host is None else host
         """Default Base url
         """
         self.server_index = 0 if server_index is None and host is None else server_index
@@ -420,7 +420,7 @@ conf = newsrank_sdk.Configuration(
                "OS: {env}\n"\
                "Python Version: {pyversion}\n"\
                "Version of the API: 1.0.0\n"\
-               "SDK Package Version: 0.1.9".\
+               "SDK Package Version: 0.1.10".\
                format(env=sys.platform, pyversion=sys.version)
 
     def get_host_settings(self):
@@ -430,7 +430,7 @@ conf = newsrank_sdk.Configuration(
         """
         return [
             {
-                'url': "https://api.newsrank.ai/v1",
+                'url': "https://api.newsrank.ai",
                 'description': "Production",
             }
         ]

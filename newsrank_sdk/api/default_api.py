@@ -507,7 +507,7 @@ class DefaultApi:
 
         return self.api_client.param_serialize(
             method='GET',
-            resource_path='/api/backtest',
+            resource_path='/v1/backtest',
             path_params=_path_params,
             query_params=_query_params,
             header_params=_header_params,
@@ -542,7 +542,7 @@ class DefaultApi:
     ) -> BacktestReplayWithEmbeddings200Response:
         """Replay events with embedding filters
 
-        Same as `GET /api/backtest` but accepts a JSON body for advanced filters including embedding vector similarity search.  Use `embedding_filters` to find events about articles semantically similar to a reference embedding. Max 1 embedding filter per request. Requires **Pro tier or higher**. 
+        Same as `GET /v1/backtest` but accepts a JSON body for advanced filters including embedding vector similarity search.  Use `embedding_filters` to find events about articles semantically similar to a reference embedding. Max 1 embedding filter per request. Requires **Pro tier or higher**. 
 
         :param backtest_replay_with_embeddings_request: (required)
         :type backtest_replay_with_embeddings_request: BacktestReplayWithEmbeddingsRequest
@@ -611,7 +611,7 @@ class DefaultApi:
     ) -> ApiResponse[BacktestReplayWithEmbeddings200Response]:
         """Replay events with embedding filters
 
-        Same as `GET /api/backtest` but accepts a JSON body for advanced filters including embedding vector similarity search.  Use `embedding_filters` to find events about articles semantically similar to a reference embedding. Max 1 embedding filter per request. Requires **Pro tier or higher**. 
+        Same as `GET /v1/backtest` but accepts a JSON body for advanced filters including embedding vector similarity search.  Use `embedding_filters` to find events about articles semantically similar to a reference embedding. Max 1 embedding filter per request. Requires **Pro tier or higher**. 
 
         :param backtest_replay_with_embeddings_request: (required)
         :type backtest_replay_with_embeddings_request: BacktestReplayWithEmbeddingsRequest
@@ -680,7 +680,7 @@ class DefaultApi:
     ) -> RESTResponseType:
         """Replay events with embedding filters
 
-        Same as `GET /api/backtest` but accepts a JSON body for advanced filters including embedding vector similarity search.  Use `embedding_filters` to find events about articles semantically similar to a reference embedding. Max 1 embedding filter per request. Requires **Pro tier or higher**. 
+        Same as `GET /v1/backtest` but accepts a JSON body for advanced filters including embedding vector similarity search.  Use `embedding_filters` to find events about articles semantically similar to a reference embedding. Max 1 embedding filter per request. Requires **Pro tier or higher**. 
 
         :param backtest_replay_with_embeddings_request: (required)
         :type backtest_replay_with_embeddings_request: BacktestReplayWithEmbeddingsRequest
@@ -786,7 +786,7 @@ class DefaultApi:
 
         return self.api_client.param_serialize(
             method='POST',
-            resource_path='/api/backtest',
+            resource_path='/v1/backtest',
             path_params=_path_params,
             query_params=_query_params,
             header_params=_header_params,
@@ -1065,7 +1065,7 @@ class DefaultApi:
 
         return self.api_client.param_serialize(
             method='GET',
-            resource_path='/api/v1/item',
+            resource_path='/v1/item',
             path_params=_path_params,
             query_params=_query_params,
             header_params=_header_params,
@@ -1344,7 +1344,7 @@ class DefaultApi:
 
         return self.api_client.param_serialize(
             method='GET',
-            resource_path='/api/v1/content',
+            resource_path='/v1/content',
             path_params=_path_params,
             query_params=_query_params,
             header_params=_header_params,
@@ -1646,7 +1646,7 @@ class DefaultApi:
 
         return self.api_client.param_serialize(
             method='GET',
-            resource_path='/api/v1/embeddings',
+            resource_path='/v1/embeddings',
             path_params=_path_params,
             query_params=_query_params,
             header_params=_header_params,
@@ -1906,7 +1906,7 @@ class DefaultApi:
 
         return self.api_client.param_serialize(
             method='GET',
-            resource_path='/api/v1/entities/{id}',
+            resource_path='/v1/entities/{id}',
             path_params=_path_params,
             query_params=_query_params,
             header_params=_header_params,
@@ -2202,7 +2202,7 @@ class DefaultApi:
 
         return self.api_client.param_serialize(
             method='GET',
-            resource_path='/api/v1/graph/entity-network',
+            resource_path='/v1/graph/entity-network',
             path_params=_path_params,
             query_params=_query_params,
             header_params=_header_params,
@@ -2481,7 +2481,7 @@ class DefaultApi:
 
         return self.api_client.param_serialize(
             method='GET',
-            resource_path='/api/v1/related',
+            resource_path='/v1/related',
             path_params=_path_params,
             query_params=_query_params,
             header_params=_header_params,
@@ -2726,7 +2726,7 @@ class DefaultApi:
 
         return self.api_client.param_serialize(
             method='GET',
-            resource_path='/api/v1/stats',
+            resource_path='/v1/stats',
             path_params=_path_params,
             query_params=_query_params,
             header_params=_header_params,
@@ -3020,7 +3020,7 @@ class DefaultApi:
 
         return self.api_client.param_serialize(
             method='GET',
-            resource_path='/api/v1/stories/{id}',
+            resource_path='/v1/stories/{id}',
             path_params=_path_params,
             query_params=_query_params,
             header_params=_header_params,
@@ -3299,7 +3299,7 @@ class DefaultApi:
 
         return self.api_client.param_serialize(
             method='GET',
-            resource_path='/api/v1/graph/story-entity',
+            resource_path='/v1/graph/story-entity',
             path_params=_path_params,
             query_params=_query_params,
             header_params=_header_params,
@@ -3576,7 +3576,7 @@ class DefaultApi:
 
         return self.api_client.param_serialize(
             method='GET',
-            resource_path='/api/v1/stories/{id}/updates',
+            resource_path='/v1/stories/{id}/updates',
             path_params=_path_params,
             query_params=_query_params,
             header_params=_header_params,
@@ -3855,7 +3855,7 @@ class DefaultApi:
 
         return self.api_client.param_serialize(
             method='GET',
-            resource_path='/api/v1/graph/topic-cluster',
+            resource_path='/v1/graph/topic-cluster',
             path_params=_path_params,
             query_params=_query_params,
             header_params=_header_params,
@@ -4140,7 +4140,7 @@ class DefaultApi:
 
         return self.api_client.param_serialize(
             method='GET',
-            resource_path='/api/v1/usage',
+            resource_path='/v1/usage',
             path_params=_path_params,
             query_params=_query_params,
             header_params=_header_params,
@@ -4383,7 +4383,7 @@ class DefaultApi:
 
         return self.api_client.param_serialize(
             method='GET',
-            resource_path='/api/v1/version',
+            resource_path='/v1/version',
             path_params=_path_params,
             query_params=_query_params,
             header_params=_header_params,
@@ -4832,7 +4832,7 @@ class DefaultApi:
 
         return self.api_client.param_serialize(
             method='GET',
-            resource_path='/api/v1/items',
+            resource_path='/v1/items',
             path_params=_path_params,
             query_params=_query_params,
             header_params=_header_params,
@@ -5077,7 +5077,7 @@ class DefaultApi:
 
         return self.api_client.param_serialize(
             method='GET',
-            resource_path='/api/v1/categories',
+            resource_path='/v1/categories',
             path_params=_path_params,
             query_params=_query_params,
             header_params=_header_params,
@@ -5407,7 +5407,7 @@ class DefaultApi:
 
         return self.api_client.param_serialize(
             method='GET',
-            resource_path='/api/v1/entities',
+            resource_path='/v1/entities',
             path_params=_path_params,
             query_params=_query_params,
             header_params=_header_params,
@@ -5701,7 +5701,7 @@ class DefaultApi:
 
         return self.api_client.param_serialize(
             method='GET',
-            resource_path='/api/v1/entities/{id}/articles',
+            resource_path='/v1/entities/{id}/articles',
             path_params=_path_params,
             query_params=_query_params,
             header_params=_header_params,
@@ -5980,7 +5980,7 @@ class DefaultApi:
 
         return self.api_client.param_serialize(
             method='GET',
-            resource_path='/api/v1/entities/politicians',
+            resource_path='/v1/entities/politicians',
             path_params=_path_params,
             query_params=_query_params,
             header_params=_header_params,
@@ -6276,7 +6276,7 @@ class DefaultApi:
 
         return self.api_client.param_serialize(
             method='GET',
-            resource_path='/api/v1/stories/ranked',
+            resource_path='/v1/stories/ranked',
             path_params=_path_params,
             query_params=_query_params,
             header_params=_header_params,
@@ -6521,7 +6521,7 @@ class DefaultApi:
 
         return self.api_client.param_serialize(
             method='GET',
-            resource_path='/api/v1/source-rankings',
+            resource_path='/v1/source-rankings',
             path_params=_path_params,
             query_params=_query_params,
             header_params=_header_params,
@@ -6766,7 +6766,7 @@ class DefaultApi:
 
         return self.api_client.param_serialize(
             method='GET',
-            resource_path='/api/v1/sources',
+            resource_path='/v1/sources',
             path_params=_path_params,
             query_params=_query_params,
             header_params=_header_params,
@@ -7096,7 +7096,7 @@ class DefaultApi:
 
         return self.api_client.param_serialize(
             method='GET',
-            resource_path='/api/v1/stories',
+            resource_path='/v1/stories',
             path_params=_path_params,
             query_params=_query_params,
             header_params=_header_params,
@@ -7356,7 +7356,7 @@ class DefaultApi:
 
         return self.api_client.param_serialize(
             method='GET',
-            resource_path='/api/v1/stories/{id}/developments',
+            resource_path='/v1/stories/{id}/developments',
             path_params=_path_params,
             query_params=_query_params,
             header_params=_header_params,
@@ -7601,7 +7601,7 @@ class DefaultApi:
 
         return self.api_client.param_serialize(
             method='GET',
-            resource_path='/api/v1/tags',
+            resource_path='/v1/tags',
             path_params=_path_params,
             query_params=_query_params,
             header_params=_header_params,
@@ -7863,7 +7863,7 @@ class DefaultApi:
 
         return self.api_client.param_serialize(
             method='GET',
-            resource_path='/api/v1/entities/trending',
+            resource_path='/v1/entities/trending',
             path_params=_path_params,
             query_params=_query_params,
             header_params=_header_params,
@@ -8159,7 +8159,7 @@ class DefaultApi:
 
         return self.api_client.param_serialize(
             method='GET',
-            resource_path='/api/v1/search',
+            resource_path='/v1/search',
             path_params=_path_params,
             query_params=_query_params,
             header_params=_header_params,
@@ -8455,7 +8455,7 @@ class DefaultApi:
 
         return self.api_client.param_serialize(
             method='GET',
-            resource_path='/api/v1/search/full',
+            resource_path='/v1/search/full',
             path_params=_path_params,
             query_params=_query_params,
             header_params=_header_params,
@@ -8734,7 +8734,7 @@ class DefaultApi:
 
         return self.api_client.param_serialize(
             method='GET',
-            resource_path='/api/v1/search/suggest',
+            resource_path='/v1/search/suggest',
             path_params=_path_params,
             query_params=_query_params,
             header_params=_header_params,
@@ -9013,7 +9013,7 @@ class DefaultApi:
 
         return self.api_client.param_serialize(
             method='POST',
-            resource_path='/api/v1/search/vector',
+            resource_path='/v1/search/vector',
             path_params=_path_params,
             query_params=_query_params,
             header_params=_header_params,
