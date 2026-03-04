@@ -14,7 +14,7 @@
 """  # noqa: E501
 
 
-__version__ = "0.1.10"
+__version__ = "0.1.11"
 
 # import apis into sdk package
 from newsrank_sdk.api.default_api import DefaultApi

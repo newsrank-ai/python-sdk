@@ -420,7 +420,7 @@ conf = newsrank_sdk.Configuration(
                "OS: {env}\n"\
                "Python Version: {pyversion}\n"\
                "Version of the API: 1.0.0\n"\
-               "SDK Package Version: 0.1.10".\
+               "SDK Package Version: 0.1.11".\
                format(env=sys.platform, pyversion=sys.version)
 
     def get_host_settings(self):
@@ -432,6 +432,10 @@ conf = newsrank_sdk.Configuration(
             {
                 'url': "https://api.newsrank.ai",
                 'description': "Production",
+            },
+            {
+                'url': "https://sandbox.newsrank.ai",
+                'description': "Sandbox (free, no signup required)",
             }
         ]
 
